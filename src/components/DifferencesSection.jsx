@@ -11,25 +11,25 @@ export default function DifferencesSection() {
 
   return (
     <section>
-      <h3>Чем мы отличаемся от других</h3>
+      <h3>Авторы цитат</h3>
 
       <Button
         isActive={contentType === 'way'}
         onClick={() => handleClick('way')}
       >
-        Подход
+        Геральт из Ривии
       </Button>
       <Button
         isActive={contentType === 'easy'}
         onClick={() => handleClick('easy')}
       >
-        Доступность
+        Дийкстра
       </Button>
       <Button
         isActive={contentType === 'program'}
         onClick={() => handleClick('program')}
       >
-        Концентрация
+        Золтан Хивай
       </Button>
 
       {!contentType && <p>Нажми на кнопку</p>}

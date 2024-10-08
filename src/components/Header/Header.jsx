@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
-import logo from '/logo-name.svg'
+import logo from '/vite.svg'
 import { styled } from 'styled-components'
-// import './Header.css'
 
 const HeaderContainer = styled.header`
   height: 50px;
@@ -26,10 +25,10 @@ export default function Header() {
   }, [])
 
   return (
-    <HeaderContainer>
-      <img src={logo} alt={'Result'} />
+		<HeaderContainer>
+			<img src={logo} alt={'Result'} />
 
-      <span>Время сейчас: {now.toLocaleTimeString()}</span>
-    </HeaderContainer>
-  )
+			<span>Время сейчас: {now.toLocaleTimeString()}</span>
+		</HeaderContainer>
+	)
 }

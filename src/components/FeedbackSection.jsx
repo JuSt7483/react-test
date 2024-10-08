@@ -30,13 +30,8 @@ export default function FeedbackSection() {
     hasError: false,
     reason: 'help',
   })
-  // const [name, setName] = useState('')
-  // const [hasError, setHasError] = useState(true)
-  // const [reason, setReason] = useState('help')
 
   function handleNameChange(event) {
-    // setName(event.target.value)
-    // setHasError(event.target.value.trim().length === 0)
     setForm((prev) => ({
       ...prev,
       name: event.target.value,
@@ -44,15 +39,10 @@ export default function FeedbackSection() {
     }))
   }
 
-  // function toggleError() {
-  // setHasError((prev) => !prev)
-  // }
 
   return (
     <section>
       <h3>Обратная связь</h3>
-
-      {/* <Button onClick={toggleError}>Toggle Error</Button> */}
 
       <form style={{ marginBottom: '1rem' }}>
         <label htmlFor="name">Ваше имя</label>
@@ -80,8 +70,6 @@ export default function FeedbackSection() {
           <option value="help">Нужна помощь</option>
           <option value="suggest">Предложение</option>
         </select>
-
-        {/* <pre>{JSON.stringify(form, null, 2)}</pre> */}
 
         <Button disabled={form.hasError} isActive={!form.hasError}>
           Отправить
